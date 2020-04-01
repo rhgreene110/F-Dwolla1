@@ -1,0 +1,13 @@
+var requestBody = {
+  firstName: 'Richard',
+  lastName: 'Merchant',
+  email: 'xtestcustomer1@outlook.com',
+  type: 'receive-only',
+  ipAddress: '192.168.86.50'    // Richard's APPLE desktop
+};
+
+appToken
+  .post('customers', requestBody)
+  .then(function(res) {
+    res.headers.get('location'); // => 'https://api-sandbox.dwolla.com/customers/c7f300c0-f1ef-4151-9bbe-005005aa3747'
+  });
