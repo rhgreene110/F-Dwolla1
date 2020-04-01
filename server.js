@@ -3,7 +3,7 @@ var dwolla = require ('dwolla-v2');
 //require ('dotenv').config ();
 require ('dotenv').config ({path: __dirname + '/.env'});
 
-// RHG - Show contents of .env file
+// RHG - Show contents of .env file to confirm
 console.log ('RHG-ENV DWOLLA_APP_KEY --- ', process.env.DWOLLA_APP_KEY);
 console.log ('RHG-ENV DWOLLA_APP_SECRET --- ', process.env.DWOLLA_APP_SECRET);
 
