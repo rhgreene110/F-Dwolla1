@@ -13,7 +13,7 @@ var merchant1 = new dwolla.Client ({
   environment: 'sandbox', // defaults to 'production'
 });
 
-console.log ('Merchant1 ', merchant1);
+console.log ('RHG -> Merchant1 ', merchant1);
 
 var customer1 = new dwolla.Client ({
   key: process.env.DWOLLA_APP_KEY,
@@ -21,4 +21,4 @@ var customer1 = new dwolla.Client ({
   environment: 'sandbox',
 });
 
-console.log ('customer1 ', customer1);
+console.log ('RHG -> customer1 ', customer1);
